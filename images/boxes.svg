@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" role="img" aria-label="">
+<g stroke="#14284b" stroke-width="2" stroke-linejoin="round">
+<path d="M70 150l55-28 55 28-55 28z" fill="#93c5fd"/><path d="M70 150v50l55 28v-50z" fill="#3b82f6"/><path d="M180 150v50l-55 28v-50z" fill="#1d4ed8"/>
+<path d="M150 90l55-28 55 28-55 28z" fill="#fde68a"/><path d="M150 90v50l55 28v-50z" fill="#f59e0b"/><path d="M260 90v50l-55 28v-50z" fill="#b45309"/>
+<path d="M175 185l45-23 45 23-45 23z" fill="#a7f3d0"/><path d="M175 185v38l45 23v-38z" fill="#10b981"/><path d="M265 185v38l-45 23v-38z" fill="#047857"/></g>
+<path d="M30 238h260" stroke="#14284b" stroke-opacity=".2" stroke-width="3" stroke-linecap="round"/>
+</svg>
