@@ -73,10 +73,17 @@ def pages(lang):
   <article class="card"><h3>分级与质检</h3><p>统一的成色分级标准，出货前逐台检测并记录。</p></article>
   <article class="card"><h3>物流与交付</h3><p>按订单安排发货与交付，订单进度可追踪。</p></article>
 </div><p><a class="more" href="services.html">查看全部服务 →</a></p></div></section>
-<section class="sec"><div class="wrap"><h2>我们服务的客户</h2>
+<section class="sec"><div class="wrap"><h2>合作流程</h2>
+<ol class="steps">
+<li><b>1</b><h3>货源</h3><p>通过集团网络获取设备。</p></li>
+<li><b>2</b><h3>检测分级</h3><p>逐台检测、清除数据、统一分级。</p></li>
+<li><b>3</b><h3>发货交付</h3><p>按订单发货并同步进度。</p></li>
+<li><b>4</b><h3>售后跟进</h3><p>反馈与持续合作。{ph('[如有质保请补充]')}</p></li>
+</ol></div></section>
+<section class="sec alt"><div class="wrap"><h2>我们服务的客户</h2>
 <ul class="ticks cols"><li>移动运营商</li><li>零售商与连锁渠道</li><li>电商平台</li><li>经销商与批发商</li><li>保险与设备更换服务商</li><li>企业与机构采购方</li></ul>
 <p class="note">{ph('[按实际客户类型增删]')}</p></div></section>
-<section class="sec alt"><div class="wrap"><h2>集团实力：Sunstrike</h2>
+<section class="sec"><div class="wrap"><h2>集团实力：Sunstrike</h2>
 <p>以下为 Sunstrike International 集团的整体数据，Siersz 依托这一网络开展业务。</p>
 <div class="stats">
   <div><b>1997</b><span>集团创立</span></div>
@@ -84,7 +91,7 @@ def pages(lang):
   <div><b>2,500+</b><span>全球合作伙伴</span></div>
   <div><b>1M+</b><span>每年处理设备（台）</span></div>
 </div><p class="note">{ph('[上线前请与集团确认以上数据，并确保口径一致]')}</p></div></section>
-<section class="sec"><div class="wrap"><h2>全球网络</h2>
+<section class="sec alt"><div class="wrap"><h2>全球网络</h2>
 <p>集团在五大洲布局，主要枢纽包括：</p>
 <div class="stats net">
   <div><b>迈阿密</b><span>北美</span></div>
@@ -190,6 +197,21 @@ def pages(lang):
 <p>请发邮件并注明：公司名称与所在国家/地区、所需型号与数量、预计月采购量、交货地点。我们的团队将尽快与您联系。</p>
 <p><a class="btn" href="mailto:{C['zh']['email']}?subject=%E8%B4%B8%E6%98%93%E8%B4%A6%E6%88%B7%E7%94%B3%E8%AF%B7">申请开通贸易账户</a></p>
 <p class="note">发布前请把按钮中的邮箱换成真实邮箱（在 site.py 顶部修改后重新生成）。</p></div></div></section>'''),
+            'faq': dict(title='常见问题', desc='关于产品、分级、发货与合作方式的常见问题。', body=f'''
+<section class="page-head"><div class="wrap"><h1>常见问题</h1><p class="lead">合作前最常被问到的问题。</p></div></section>
+<section class="sec"><div class="wrap faqs">
+<details class="faq"><summary>你们销售什么产品？</summary><div><p>主营面向企业客户的二手 iPhone，可按型号、容量、颜色和成色等级下单。其他苹果产品可通过集团网络询价。</p></div></details>
+<details class="faq"><summary>最低起订量是多少？</summary><div><p>起订量视型号和合作模式而定。{ph('[填写起订量]')}</p></div></details>
+<details class="faq"><summary>成色是如何分级的？</summary><div><p>我们使用统一的成色分级标准，详见“产品与分级”页面。</p></div></details>
+<details class="faq"><summary>设备会经过检测并清除数据吗？</summary><div><p>是的，出货前逐台检测功能与外观，并清除数据、记录结果。{ph('[按实际流程核对]')}</p></div></details>
+<details class="faq"><summary>有质保和退换政策吗？</summary><div><p>{ph('[填写质保期限、退换条件与流程]')}</p></div></details>
+<details class="faq"><summary>如何发货？支持哪些贸易条款？</summary><div><p>按订单安排发货。{ph('[填写发货地、常用贸易条款（如 FOB/CIF）和交货周期]')}</p></div></details>
+<details class="faq"><summary>支持哪些付款方式？</summary><div><p>{ph('[填写币种与付款方式]')}</p></div></details>
+<details class="faq"><summary>如何开通贸易账户？</summary><div><p>请通过“联系我们”页面发送邮件，说明公司名称与所在国家/地区、需求型号与数量、预计月采购量和交货地点，我们的团队会尽快联系您。</p></div></details>
+<details class="faq"><summary>你们是 Apple 授权经销商吗？</summary><div><p>我们是独立的二手设备供应商，与 Apple 无关联。Apple、iPhone 为 Apple Inc. 的商标。{ph('[请按实际授权情况核对此回答]')}</p></div></details>
+<details class="faq"><summary>Siersz 与 Sunstrike 是什么关系？</summary><div><p>Siersz 是 Sunstrike 集团的姊妹公司，双方为各自独立的法人实体。我们依托集团的全球供应网络开展业务。</p></div></details>
+</div></section>
+<section class="cta"><div class="wrap"><h2>还有其他问题？</h2><p>欢迎直接联系我们。</p><a class="btn light" href="contact.html">联系我们</a></div></section>'''),
             'privacy': dict(title='隐私政策', desc='Siersz 隐私政策。', legal=True, body=f'''
 <p>{p['legal']}（以下简称“我们”）重视您的隐私。本政策说明我们在您访问 www.siersz.com 及与我们联系时，如何收集、使用和保护您的个人信息。</p>
 <h2>1. 我们收集的信息</h2><ul><li>您主动提供的信息：姓名、公司名称、邮箱、电话及您在邮件中提供的内容。</li><li>自动收集的信息：浏览器类型、设备信息、访问页面、访问时间和大致地区等（通过日志或 Cookie）。</li></ul>
@@ -243,10 +265,17 @@ def pages(lang):
   <article class="card"><h3>Grading and inspection</h3><p>A consistent grading standard, with each device tested and recorded before shipment.</p></article>
   <article class="card"><h3>Logistics and delivery</h3><p>Shipping arranged per order, with order progress you can follow.</p></article>
 </div><p><a class="more" href="services.html">See all services →</a></p></div></section>
-<section class="sec"><div class="wrap"><h2>Who we serve</h2>
+<section class="sec"><div class="wrap"><h2>How we work</h2>
+<ol class="steps">
+<li><b>1</b><h3>Source</h3><p>Devices come in through the group network.</p></li>
+<li><b>2</b><h3>Test and grade</h3><p>Each unit tested, data-erased and graded.</p></li>
+<li><b>3</b><h3>Ship</h3><p>Dispatched per order, with progress shared.</p></li>
+<li><b>4</b><h3>Support</h3><p>Feedback and ongoing cooperation. {ph('[Add warranty if any]')}</p></li>
+</ol></div></section>
+<section class="sec alt"><div class="wrap"><h2>Who we serve</h2>
 <ul class="ticks cols"><li>Mobile network operators</li><li>Retailers and retail chains</li><li>E-commerce platforms</li><li>Distributors and wholesalers</li><li>Insurers and device-replacement providers</li><li>Enterprise and public-sector buyers</li></ul>
 <p class="note">{ph('[Add or remove customer types to match reality]')}</p></div></section>
-<section class="sec alt"><div class="wrap"><h2>Group strength: Sunstrike</h2>
+<section class="sec"><div class="wrap"><h2>Group strength: Sunstrike</h2>
 <p>These figures describe the Sunstrike International group as a whole. Siersz operates on the strength of this network.</p>
 <div class="stats">
   <div><b>1997</b><span>group founded</span></div>
@@ -254,7 +283,7 @@ def pages(lang):
   <div><b>2,500+</b><span>global partners</span></div>
   <div><b>1M+</b><span>devices handled per year</span></div>
 </div><p class="note">{ph('[Confirm these figures with the group before launch and keep them consistent]')}</p></div></section>
-<section class="sec"><div class="wrap"><h2>Global network</h2>
+<section class="sec alt"><div class="wrap"><h2>Global network</h2>
 <p>The group operates across five continents. Main hubs include:</p>
 <div class="stats net">
   <div><b>Miami</b><span>North America</span></div>
@@ -360,6 +389,21 @@ def pages(lang):
 <p>Email us with your company name and country, the models and quantities you need, your expected monthly volume and the delivery location. Our team will get back to you shortly.</p>
 <p><a class="btn" href="mailto:{C['en']['email']}?subject=Trade%20account%20enquiry">Open a trade account</a></p>
 <p class="note">Before launch, replace the email in this button with the real address (edit the top of site.py and regenerate).</p></div></div></section>'''),
+        'faq': dict(title='FAQ', desc='Common questions about products, grading, shipping and how to work with Siersz.', body=f'''
+<section class="page-head"><div class="wrap"><h1>FAQ</h1><p class="lead">The questions we are asked most before working together.</p></div></section>
+<section class="sec"><div class="wrap faqs">
+<details class="faq"><summary>What do you sell?</summary><div><p>Mainly pre-owned iPhone for business customers, ordered by model, capacity, colour and grade. Other Apple products can be quoted through the group network.</p></div></details>
+<details class="faq"><summary>What is the minimum order?</summary><div><p>The minimum depends on the model and the partnership model. {ph('[enter minimum order quantity]')}</p></div></details>
+<details class="faq"><summary>How are devices graded?</summary><div><p>We use one consistent cosmetic grading standard. See the Products page for the grades.</p></div></details>
+<details class="faq"><summary>Are devices tested and data-erased?</summary><div><p>Yes. Each device is tested for function and appearance, data-erased and recorded before shipment. {ph('[check against your real process]')}</p></div></details>
+<details class="faq"><summary>Is there a warranty or returns policy?</summary><div><p>{ph('[enter warranty period, return conditions and process]')}</p></div></details>
+<details class="faq"><summary>How do you ship, and on what trade terms?</summary><div><p>Shipping is arranged per order. {ph('[enter ship-from location, usual trade terms such as FOB/CIF, and lead time]')}</p></div></details>
+<details class="faq"><summary>Which payment methods do you accept?</summary><div><p>{ph('[enter currencies and payment methods]')}</p></div></details>
+<details class="faq"><summary>How do I open a trade account?</summary><div><p>Email us from the Contact page with your company name and country, the models and quantities you need, your expected monthly volume and the delivery location. Our team will get back to you shortly.</p></div></details>
+<details class="faq"><summary>Are you an authorised Apple reseller?</summary><div><p>We are an independent supplier of pre-owned devices and are not affiliated with Apple. Apple and iPhone are trademarks of Apple Inc. {ph('[check this answer against your real authorisation status]')}</p></div></details>
+<details class="faq"><summary>How is Siersz related to Sunstrike?</summary><div><p>Siersz is a sister company of the Sunstrike group. The two are separate legal entities, and Siersz draws on the group's global supply network.</p></div></details>
+</div></section>
+<section class="cta"><div class="wrap"><h2>Another question?</h2><p>Get in touch with us directly.</p><a class="btn light" href="contact.html">Contact us</a></div></section>'''),
         'privacy': dict(title='Privacy Policy', desc='Siersz privacy policy.', legal=True, body=f'''
 <p>{p['legal']} ("we", "us") respects your privacy. This policy explains how we collect, use and protect personal information when you visit www.siersz.com or contact us.</p>
 <h2>1. Information we collect</h2><ul><li>Information you give us: name, company, email, phone number and anything you include in your messages.</li><li>Information collected automatically: browser type, device information, pages visited, visit times and approximate location, through logs or cookies.</li></ul>
@@ -491,7 +535,7 @@ ART = {
 </svg>''',
 }
 
-PAGE_ART = {'about': 'globe', 'services': 'boxes', 'why-us': 'shield', 'contact': 'chat', 'products': 'boxes', 'sustainability': 'globe'}
+PAGE_ART = {'about': 'globe', 'services': 'boxes', 'why-us': 'shield', 'contact': 'chat', 'products': 'boxes', 'sustainability': 'globe', 'faq': 'chat'}
 ICON_SEQ = {
     'index': ['package', 'shield', 'truck'],
     'about': ['target', 'recycle', 'handshake'],
@@ -529,7 +573,7 @@ def decorate(lang, key, body):
             qh, qp, qs = 'Every device checked, every grade clear', 'Each device is inspected and graded before it ships, so buyers know exactly what they receive.', ['Cosmetic and screen check', 'Battery and function tests', 'Data erasure and records', 'One consistent grading scale']
             qph = '[Edit these points to match your real process]'
         lis = ''.join(f'<li>{s}</li>' for s in qs)
-        quality = (f'<section class="sec alt quality"><div class="wrap two-photo"><figure class="photo reveal"><img src="{pre}images/photos/quality.jpg" alt="" width="1000" height="667" loading="lazy"></figure>'
+        quality = (f'<section class="sec quality"><div class="wrap two-photo"><figure class="photo reveal"><img src="{pre}images/photos/quality.jpg" alt="" width="1000" height="667" loading="lazy"></figure>'
                    f'<div><h2>{qh}</h2><p>{qp}</p><ul class="ticks">{lis}</ul><p class="note">{ph(qph)}</p></div></div></section>\n')
         body = body.replace('<section class="cta">', quality + '<section class="cta">', 1)
     if key == 'about':
@@ -583,6 +627,20 @@ EXTRA_CSS = r'''
 .logo-img.foot{height:34px;margin-bottom:10px}
 .grp{font-size:.85rem;max-width:260px}.grp a{font-weight:600;color:var(--amber)}
 .wrap.bar{max-width:1180px}
+.steps{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px}
+.steps li{position:relative;padding-top:8px}
+.steps li b{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--amber);color:#1a1200;font-size:1.1rem;margin-bottom:14px;position:relative;z-index:1}
+.steps li:not(:last-child):after{content:"";position:absolute;top:30px;left:52px;right:-18px;height:2px;background:repeating-linear-gradient(90deg,var(--amber) 0 6px,transparent 6px 12px);opacity:.6}
+.steps h3{margin:0 0 .3em;font-size:1.1rem}.steps p{margin:0;color:var(--mute)}
+@media(max-width:820px){.steps li:not(:last-child):after{display:none}}
+.faqs{max-width:820px}
+.faq{border:1px solid var(--line);border-radius:12px;margin:12px 0;background:var(--bg);transition:border-color .2s}
+.faq[open]{border-color:var(--amber)}
+.faq summary{cursor:pointer;padding:16px 48px 16px 20px;font-weight:600;list-style:none;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:1.4rem;color:var(--amber);line-height:1}
+.faq[open] summary:after{content:"\2212"}
+.faq div{padding:0 20px 16px;color:var(--mute)}.faq p{margin:0}
 .hero-grid{grid-template-columns:1.4fr 1fr}
 .net b{font-size:1.5rem;line-height:1.3}
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0 32px}
@@ -679,7 +737,7 @@ def render(lang, key, pg):
     sw = ('en/' + outfile) if lang == 'zh' else ('../' + outfile)
     nav = ''.join(f'<li><a href="{k}.html"{" aria-current=\"page\"" if k == key else ""}>{t}</a></li>' for k, t in NAV[lang])
     nav += f'<li><a class="lang" href="{sw}" hreflang="{"en" if lang == "zh" else "zh-CN"}" lang="{"en" if lang == "zh" else "zh-CN"}" title="{u["toggle_title"]}">{u["toggle"]}</a></li>'
-    fl = ''.join(f'<li><a href="{k}.html">{t}</a></li>' for k, t in NAV[lang])
+    fl = ''.join(f'<li><a href="{k}.html">{t}</a></li>' for k, t in NAV[lang] + [('faq', '常见问题' if lang == 'zh' else 'FAQ')])
     ll = ''.join(f'<li><a href="{k}.html">{t}</a></li>' for k, t in LEGAL[lang])
     brand = C[lang]['brand']
     title = f'{pg["title"]} | {brand}' if key != 'index' else f'{brand} | {pg["title"]}'
