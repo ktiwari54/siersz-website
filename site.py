@@ -73,7 +73,10 @@ def pages(lang):
   <article class="card"><h3>分级与质检</h3><p>统一的成色分级标准，出货前逐台检测并记录。</p></article>
   <article class="card"><h3>物流与交付</h3><p>按订单安排发货与交付，订单进度可追踪。</p></article>
 </div><p><a class="more" href="services.html">查看全部服务 →</a></p></div></section>
-<section class="sec"><div class="wrap"><h2>集团实力：Sunstrike</h2>
+<section class="sec"><div class="wrap"><h2>我们服务的客户</h2>
+<ul class="ticks cols"><li>移动运营商</li><li>零售商与连锁渠道</li><li>电商平台</li><li>经销商与批发商</li><li>保险与设备更换服务商</li><li>企业与机构采购方</li></ul>
+<p class="note">{ph('[按实际客户类型增删]')}</p></div></section>
+<section class="sec alt"><div class="wrap"><h2>集团实力：Sunstrike</h2>
 <p>以下为 Sunstrike International 集团的整体数据，Siersz 依托这一网络开展业务。</p>
 <div class="stats">
   <div><b>1997</b><span>集团创立</span></div>
@@ -81,9 +84,9 @@ def pages(lang):
   <div><b>2,500+</b><span>全球合作伙伴</span></div>
   <div><b>1M+</b><span>每年处理设备（台）</span></div>
 </div><p class="note">{ph('[上线前请与集团确认以上数据，并确保口径一致]')}</p></div></section>
-<section class="sec alt"><div class="wrap"><h2>全球网络</h2>
+<section class="sec"><div class="wrap"><h2>全球网络</h2>
 <p>集团在五大洲布局，主要枢纽包括：</p>
-<div class="stats">
+<div class="stats net">
   <div><b>迈阿密</b><span>北美</span></div>
   <div><b>伦敦</b><span>欧洲</span></div>
   <div><b>迪拜</b><span>中东</span></div>
@@ -240,7 +243,10 @@ def pages(lang):
   <article class="card"><h3>Grading and inspection</h3><p>A consistent grading standard, with each device tested and recorded before shipment.</p></article>
   <article class="card"><h3>Logistics and delivery</h3><p>Shipping arranged per order, with order progress you can follow.</p></article>
 </div><p><a class="more" href="services.html">See all services →</a></p></div></section>
-<section class="sec"><div class="wrap"><h2>Group strength: Sunstrike</h2>
+<section class="sec"><div class="wrap"><h2>Who we serve</h2>
+<ul class="ticks cols"><li>Mobile network operators</li><li>Retailers and retail chains</li><li>E-commerce platforms</li><li>Distributors and wholesalers</li><li>Insurers and device-replacement providers</li><li>Enterprise and public-sector buyers</li></ul>
+<p class="note">{ph('[Add or remove customer types to match reality]')}</p></div></section>
+<section class="sec alt"><div class="wrap"><h2>Group strength: Sunstrike</h2>
 <p>These figures describe the Sunstrike International group as a whole. Siersz operates on the strength of this network.</p>
 <div class="stats">
   <div><b>1997</b><span>group founded</span></div>
@@ -248,9 +254,9 @@ def pages(lang):
   <div><b>2,500+</b><span>global partners</span></div>
   <div><b>1M+</b><span>devices handled per year</span></div>
 </div><p class="note">{ph('[Confirm these figures with the group before launch and keep them consistent]')}</p></div></section>
-<section class="sec alt"><div class="wrap"><h2>Global network</h2>
+<section class="sec"><div class="wrap"><h2>Global network</h2>
 <p>The group operates across five continents. Main hubs include:</p>
-<div class="stats">
+<div class="stats net">
   <div><b>Miami</b><span>North America</span></div>
   <div><b>London</b><span>Europe</span></div>
   <div><b>Dubai</b><span>Middle East</span></div>
@@ -523,7 +529,7 @@ def decorate(lang, key, body):
             qh, qp, qs = 'Every device checked, every grade clear', 'Each device is inspected and graded before it ships, so buyers know exactly what they receive.', ['Cosmetic and screen check', 'Battery and function tests', 'Data erasure and records', 'One consistent grading scale']
             qph = '[Edit these points to match your real process]'
         lis = ''.join(f'<li>{s}</li>' for s in qs)
-        quality = (f'<section class="sec quality"><div class="wrap two-photo"><figure class="photo reveal"><img src="{pre}images/photos/quality.jpg" alt="" width="1000" height="667" loading="lazy"></figure>'
+        quality = (f'<section class="sec alt quality"><div class="wrap two-photo"><figure class="photo reveal"><img src="{pre}images/photos/quality.jpg" alt="" width="1000" height="667" loading="lazy"></figure>'
                    f'<div><h2>{qh}</h2><p>{qp}</p><ul class="ticks">{lis}</ul><p class="note">{ph(qph)}</p></div></div></section>\n')
         body = body.replace('<section class="cta">', quality + '<section class="cta">', 1)
     if key == 'about':
@@ -577,6 +583,9 @@ EXTRA_CSS = r'''
 .logo-img.foot{height:34px;margin-bottom:10px}
 .grp{font-size:.85rem;max-width:260px}.grp a{font-weight:600;color:var(--amber)}
 .wrap.bar{max-width:1180px}
+.hero-grid{grid-template-columns:1.4fr 1fr}
+.net b{font-size:1.5rem;line-height:1.3}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0 32px}
 @media(max-width:1080px){.menu-btn{display:block}nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 20px 16px}nav.open{display:block}nav ul{flex-direction:column;align-items:stretch}}
 @media(prefers-color-scheme:dark){.logo-img:not(.foot){color:#fff}}
 .lineup{text-align:center}.lineup p{color:var(--mute)}.lineup img{width:100%;height:auto;max-width:900px;margin-top:16px}
